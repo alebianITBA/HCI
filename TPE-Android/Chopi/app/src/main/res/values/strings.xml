@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chopi</string>
+    <string name="action_settings">Settings</string>
+    <string name="categories">Categories</string>
+    <string name="welcome">Welcome to Chopi, your online store</string>
+    <string name="search_title">Search</string>
+    <string name="login">Welcome</string>
+    <string name="loginProblem">There was a problem logging in</string>
+    <string name="login_button">Log in</string>
+    <string name="title_activity_log_in">LogInActivity</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="color">Colors:</string>
+    <string name="talle">Sizes:</string>
+    <string name="edad">Age:</string>
+    <string name="marca">Brand:</string>
+    <string name="oferta">Discount:</string>
+    <string name="genero_problem">Gender:</string>
+    <string name="material">Material:</string>
+    <string name="ocasion_problem">Ocasion:</string>
+    <string name="nuevo">New item:</string>
+
+    <string name="no_results_string">No results match with your search</string>
+    <string name="no_hay_resultados">0 results</string>
+
+
+    <string-array name="drawer_options">
+        <item>Home</item>
+        <item>Categories</item>
+        <item>Log In</item>
+        <item>My Orders</item>
+        <item>Log out</item>
+    </string-array>
+
+    <array name="drawer_icons">
+        <item>@drawable/ic_action_home</item>
+        <item>@drawable/ic_action_view_as_list</item>
+        <item>@drawable/ic_action_accounts</item>
+        <item>@drawable/ic_action_person</item>
+        <item>@drawable/ic_action_settings</item>
+        <item>@drawable/ic_action_cancel</item>
+    </array>
+
+    <string name="title_activity_expandable_list_adapter">ExpandableListAdapter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_products">Products</string>
+    <string name="title_activity_orders">My Orders</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_products_list">Products</string>
+    <string name="connectionProblem">Connection problem</string>
+    <string name="connectionLost">Internet connection lost</string>
+    <string name="search">Search</string>
+    <string name="close">Close</string>
+    <string name="loggingout">Logging out...</string>
+    <string name="state1">Created</string>
+    <string name="state2">Confirmed</string>
+    <string name="state3">In Transit</string>
+    <string name="state4">Delivered</string>
+    <string name="stateUnknown">Unknown</string>
+    <string name="order1">Order number: </string>
+    <string name="order2">Address: </string>
+    <string name="order3">State: </string>
+    <string name="order4">Total: $</string>
+    <string name="order5">Creation date: </string>
+    <string name="order6">Delivery date: </string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="price">Price</string>
+    <string name="wifi_status_off">Wifi is off</string>
+    <string name="wifi_status_on">Wifi is on</string>
+    <string name="orderTitle">Order: </string>
+    <string name="loading">Loading...</string>
+    <string name="category1">Footwear</string>
+    <string name="category2">Clothes</string>
+    <string name="category3">Accessories</string>
+    <string name="see_all">See all products in category</string>
+    <string name="quantity">Quantity:</string>
+    <string name="total_price">Total price: $</string>
+    <string name="by_gender_female">Woman > categories</string>
+    <string name="by_gender_male">Man > categories</string>
+    <string name="by_age_baby">Baby > categories</string>
+    <string name="by_age_infantil">Child > categories</string>
+    <string name="latitude">Latitude: </string>
+    <string name="longitude">Longitude: </string>
+
+    <string name="notification_onupdate">Updates found.</string>
+    <string name="notification_onupdate_nonew">Up to date.</string>
+    <string name="notification_error">Update error.</string>
+    <string name="notification_error_notloggedin">User not logged in.</string>
+    <string name="notification_order">Order</string>
+    <string name="notification_order_new">created</string>
+    <string name="notification_order_updatedlocation">location updated</string>
+    <string name="notification_order_updatedstatus">status updated</string>
+    <string name="notification_status_created">created</string>
+    <string name="notification_status_confirmed">confirmed</string>
+    <string name="notification_status_transport">shipped</string>
+    <string name="notification_status_delivered">delivered</string>
+
+
+</resources>

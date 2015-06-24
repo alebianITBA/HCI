@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.itba.hci.chopi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="20" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="20" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+        <activity
+            android:name="edu.itba.hci.chopi.activity.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="edu.itba.hci.chopi.api.BaseService"
+            android:exported="false" />
+
+        <activity
+            android:name="edu.itba.hci.chopi.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.itba.hci.chopi.activity.LogInActivity"
+            android:label="Log in" >
+
+
+        </activity>
+
+        <!--<receiver android:name=".alarm.BroadcastManager" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <activity
+            android:name="edu.itba.hci.chopi.activity.CategoriesActivity"
+            android:label="@string/title_activity_products"
+            android:parentActivityName="edu.itba.hci.chopi.activity.MainActivity" >
+        </activity>
+        <activity
+            android:name="edu.itba.hci.chopi.activity.NoResultsActivity"
+            android:label="@string/title_activity_products"
+            android:parentActivityName="edu.itba.hci.chopi.activity.GenderCategoriesActivity" >
+        </activity>
+        <activity
+            android:name="edu.itba.hci.chopi.activity.GenderCategoriesActivity"
+            android:label="@string/title_activity_products"
+            android:parentActivityName="edu.itba.hci.chopi.activity.MainActivity" >
+        </activity>
+        <activity
+            android:name="edu.itba.hci.chopi.activity.OrdersActivity"
+            android:label="@string/title_activity_orders"
+            android:parentActivityName="edu.itba.hci.chopi.activity.MainActivity" >
+        </activity>
+        <activity android:name="edu.itba.hci.chopi.activity.BaseActivity" >
+
+            <!--notificaciones -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.itba.hci.chopi.activity.ProductActivity" >
+        </activity>
+        <activity
+            android:name="edu.itba.hci.chopi.activity.ProductsListActivity"
+            android:label="@string/title_activity_products_list"
+            android:parentActivityName="edu.itba.hci.chopi.activity.CategoriesActivity" >
+        </activity>
+        <activity
+            android:name="edu.itba.hci.chopi.activity.OrderActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+    </application>
+
+</manifest>

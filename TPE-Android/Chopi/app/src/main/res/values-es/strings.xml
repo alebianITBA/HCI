@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chopi</string>
+    <string name="hello_world">Hola en castellano!</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="action_test">Prueba</string>
+    <string name="search_title">Busqueda</string>
+    <string name="categories">Categorias</string>
+    <string name="welcome">Bienvenido a Chopi, su tienda online</string>
+    <string name="login">Ingresar</string>
+    <string name="loginProblem">No se pudo loguear</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="title_activity_log_in">LogInActivity</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="drawer_open">Abrir navigation drawer</string>
+    <string name="drawer_close">Cerrar navigation drawer</string>
+
+     <string-array name="drawer_options">
+         <item>Inicio</item>
+        <item>Categorias</item>
+        <item>Iniciar Sesión</item>
+        <item>Mis Pedidos</item>
+         <item>Cerrar Sesión</item>
+     </string-array>
+
+    <string name="title_activity_expandable_list_adapter">ExpandableListAdapter</string>
+    <string name="title_activity_products">Productos</string>
+    <string name="title_activity_orders">Mis Pedidos</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_products_list">Productos</string>
+    <string name="connectionProblem">Problema de conexion</string>
+    <string name="connectionLost">Se perdió la conexión a Internet</string>
+    <string name="close">Cerrar</string>
+    <string name="loggingout">Deslogueando...</string>
+    <string name="state1">Creado</string>
+    <string name="state2">Confirmado</string>
+    <string name="state3">En Transito</string>
+    <string name="state4">Entregado</string>
+    <string name="stateUnknown">Desconocido</string>
+    <string name="search">Buscar</string>
+    <string name="order1">Numero de orden: </string>
+    <string name="order2">Direccion: </string>
+    <string name="order3">Estado: </string>
+    <string name="order4">Total: $</string>
+    <string name="order5">Fecha de creacion: </string>
+    <string name="order6">Fecha de entrega: </string>
+    <string name="title_activity_order">Ver Orden</string>
+    <string name="price">Precio</string>
+    <string name="wifi_status_off">Wifi apagado</string>
+    <string name="wifi_status_on">Wifi encendido</string>
+    <string name="orderTitle">Pedido: </string>
+    <string name="loading">Cargando...</string>
+    <string name="category1">Calzado</string>
+    <string name="category2">Indumentaria</string>
+    <string name="category3">Accesorios</string>
+    <string name="see_all">Ver todos los productos en categoria</string>
+    <string name="quantity">Cantidad:</string>
+    <string name="total_price">Precio total: $</string>
+    <string name="by_gender_female">Femenino > categorias</string>
+    <string name="by_gender_male">Masculino > categorias</string>
+    <string name="by_age_baby">Bebé > categorias</string>
+    <string name="by_age_infantil">Infantil > categorias</string>
+
+
+    <string name="latitude">Latitud: </string>
+    <string name="longitude">Longitud: </string>
+
+
+    <string name="color">Colores:</string>
+    <string name="edad">Edad:</string>
+    <string name="nuevo">Nuevo:</string>
+    <string name="talle">Talles:</string>
+    <string name="marca">Marca:</string>
+    <string name="oferta">Oferta:</string>
+    <string name="genero_problem">Género:</string>
+    <string name="material">Material:</string>
+    <string name="ocasion_problem">Ocasión:</string>
+    <string name="no_results_string">No se encontraron resultados para su búsqueda</string>
+    <string name="no_hay_resultados">0 resultados</string>
+
+
+
+    <string name="notification_onupdate">Se encontraron actualizaciones.</string>
+    <string name="notification_onupdate_nonew">No se encontraron actualizaciones.</string>
+    <string name="notification_error">Error en las actualizaciones.</string>
+    <string name="notification_error_notloggedin">No se encuentra ningún usuario logueado.</string>
+    <string name="notification_order">Pedido</string>
+    <string name="notification_order_new">realizado</string>
+    <string name="notification_order_updatedlocation">localización actualizada</string>
+    <string name="notification_order_updatedstatus">estado actualizado</string>
+    <string name="notification_status_created">creado</string>
+    <string name="notification_status_confirmed">confirmado</string>
+    <string name="notification_status_transport">enviado</string>
+    <string name="notification_status_delivered">entregado</string>
+
+
+</resources>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE 8]>
+<script type="text/javascript">
+location.replace("http://windows.microsoft.com/en-US/internet-explorer/products/ie/home");
+</script>
+<![endif]--> 
+<html>
+<head>
+	<title>Chopi</title>
+	<meta charset="UTF-8" />
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/navbar.css" rel="stylesheet">
+	<link href="css/product.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body class="body-design">
+
+	<div id="header"></div>
+	
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ol class="breadcrumb breadcrumb-style">
+					<li><a href="index.html">Inicio</a></li>
+					<li class="active">Carrito de Compras</li>
+
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="panel panel-default long">
+			<!-- Default panel contents -->
+
+			<div class="panel-heading">Carrito de Compras</div>
+
+
+			<!-- Table -->
+			<table class="table sec-color" id="productcart">
+
+					<tr>
+						<th>Foto</th>
+						<th>Producto</th>
+						<th>Marca</th>
+						<th>Color</th>
+						<th>Precio por Unidad</th>
+						<th>Cantidad</th>
+						<th>Total</th>
+						<th></th>
+					</tr>				
+
+			</table>
+
+			<table class="table sec-color" id="payTable">
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>Cantidad total</td>
+					<td></td>
+					<td id='itemcant'></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>Sub-total</td>
+					<td></td>
+					<td id='totalprice'>$</td>
+					<td>
+						<button id="payBtn" type="submit" class="btn btn-primary">Pagar</button>
+					</td>
+
+				</tr>
+
+			</table>
+			<div id="message"></div>
+		</div>
+	</div>
+
+	<div id="footer"></div>
+
+
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/carrito.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/search.js"></script>
+	
+
+</body>
+</html>

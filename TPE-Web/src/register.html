@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE 8]>
+<script type="text/javascript">
+location.replace("http://windows.microsoft.com/en-US/internet-explorer/products/ie/home");
+</script>
+<![endif]--> 
+<head>
+  <title>Chopi</title>
+  <meta charset="UTF-8" />
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div id="header"></div>
+
+  <!-- Breadcrum -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ol class="breadcrumb breadcrumb-style">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="active">Registrarse</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="navbar product-container sec-color">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>Registro</h2>
+          <div class="alert alert-info" role="alert" id="alertMsg">Inserte sus datos para poder completar el registro.</div>
+          <!--- Formulario -->
+          <form class="form validated-form formulario" role="form" id="formulario" name="Registro">
+            <!--Nombre de usuario-->
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Nombre de usuario*" id="inputUsername">
+              <span class="input-group-addon glyphicon glyphicon-user"></span>
+            </div>
+            <!--Contraseña-->
+            <div class="input-group">
+              <input type="password" class="form-control" placeholder="Contraseña*" id="inputPassword">
+              <span class="input-group-addon glyphicon glyphicon-lock"></span>
+            </div>
+            <!--Repetir Contraseña-->
+            <div class="input-group">
+              <input type="password" class="form-control" placeholder="Repita la contraseña*" id="passwordrep">
+              <span class="input-group-addon glyphicon glyphicon-lock"></span>
+            </div>
+            <!--Nombre-->
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Nombre*" id="inputName">
+              <span class="input-group-addon">Nombre/s</span>
+            </div>
+            <!--Apellido-->
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Apellido*" id="inputLastName">
+              <span class="input-group-addon">Apellido/s</span>
+            </div>
+            <!--Género-->
+            <div class="input-group">
+              <select class="form-control" id="selectGender">
+                <option id="selectDefault">Elija su género*</option>
+                <option value="M" name="genero">Masculino</option>
+                <option value="F" name="genero">Femenino</option>
+              </select>
+            </div>
+            <!--DNI-->
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="DNI*" id="inputDNI">
+              <span class="input-group-addon">DNI</span>
+            </div>
+            <!--Email-->
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Email*" id="inputEmail">
+              <span class="input-group-addon glyphicon">@</span>
+            </div>
+            <!--Fecha de Nacimiento -->
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Fecha de Nacimiento (DD/MM/AAAA)*" id="inputFechaNacimiento">
+              <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+            </div>
+          </form>
+          <button id="submitBtn" type="submit" class="btn btn-primary pull-right" data-loading-text="Verificando...">Registrarse</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer"></div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/register.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>

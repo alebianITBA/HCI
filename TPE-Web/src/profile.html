@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE 8]>
+<script type="text/javascript">
+location.replace("http://windows.microsoft.com/en-US/internet-explorer/products/ie/home");
+</script>
+<![endif]--> 
+<head>
+	<title>Chopi</title>
+	<meta charset="UTF-8" />
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/navbar.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body class="body-design">
+	<div id="header"></div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ol class="breadcrumb breadcrumb-style">
+					<li><a href="index.html">Inicio</a></li>
+					<li class="active">Perfil</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="btn-group-vertical">
+					<button class="btn btn-default" id="profileDataBtn">Datos del usuario</button>
+					<button class="btn btn-default" id="ordersDataBtn">Mis Pedidos</button>
+				</div>
+			</div>
+
+			<div class="col-md-offset-2 long navbar product-container sec-color" id="dataPanel">
+				<h3 class="align-center">Mis Datos</h3>
+				<div class="col-md-9" id="dataShow">
+					<div class="alert alert-danger" role="alert" id="alertMsg"></div>
+					<ul id="usrdata"></ul>
+					<button class="btn btn-primary btnpad" id="changePasswordBtn">Cambiar contraseña</button>
+					<form class="form validated-form formulario" role="form" id="changePassForm">
+						<div class="input-group form-box3">
+							<input type="password" class="form-control" placeholder="Contraseña actual*" id="currentPass" data-validate="required,passwdrepeat#password">
+							<span class="input-group-addon glyphicon glyphicon-lock"></span>
+						</div>
+						<div class="input-group form-box3">
+							<input type="password" class="form-control" placeholder="Nueva Contraseña*" id="newPass" data-validate="required,passwdrepeat#password">
+							<span class="input-group-addon glyphicon glyphicon-lock"></span>
+						</div>
+						<!--Repetir Contraseña-->
+						<div class="input-group form-box3">
+							<input type="password" class="form-control" placeholder="Repita nueva contraseña*" id="newPassRep" data-validate="required,passwdrepeat#password">
+							<span class="input-group-addon glyphicon glyphicon-lock"></span>
+						</div>
+					</form>
+					<div class="form-group pad">
+						<button class="btn btn-danger btnpad" id="cancelBtn"><span class="glyphicon glyphicon-remove"></span></button>
+						<button class="btn btn-primary btnpad" id="sendNewPassBtn"><span class="glyphicon glyphicon-ok"></span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-offset-2 long navbar product-container sec-color" id="ordersPanel">
+				<!-- Default panel contents -->
+				<h3 class="align-center">Mis Pedidos</h3>
+				<div id="message"></div>
+				<!-- Table -->
+				<table class="table" id="ordersTable">
+					<tr>
+						<th>Numero</th>
+						<th>Estado</th>
+						<th>Direción de envío</th>
+						<th>Fecha de creación</th>
+						<th>Fecha de entrega</th>
+						<th>Precio total</th>
+					</tr>
+				</table>
+				<button class="btn btn-primary btnpad" id="payCreatedOrdersBtn">Pagar pedidos pendientes</button>
+			</div>
+
+			<div class="col-md-offset-2 long navbar product-container sec-color" id="pendingOrdersPanel">
+				<!-- Default panel contents -->
+				<h3 class="align-center">Pedidos pendientes</h3>
+				<div id="message"></div>
+				<!-- Table -->
+				<table class="table" id="pendingOdersTable">
+					<tr>
+						<th>Numero</th>
+						<th>Estado</th>
+						<th>Direción de envío</th>
+						<th>Fecha de creación</th>
+						<th>Fecha de entrega</th>
+						<th>Precio total</th>
+
+					</tr>
+				</table>
+				<form id="pendingOrderForm">
+					<label class="control-label">Seleccione una orden sin pagar:</label>
+						<select class="form-control form-box" id="selectPendingOrder">
+							<option id="defaultSelectOption">Seleccionar id de orden*</option>
+						</select>
+				</form>
+				<button class="btn btn-primary btnpad" id="payPendingOrdersBtn">Pagar</button>
+			</div>
+
+		</div>
+	</div>
+	<div id="p11"></div>
+
+	<div id="footer"></div>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/profile.js"></script>
+	<script src="js/search.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE 8]>
+<script type="text/javascript">
+location.replace("http://windows.microsoft.com/en-US/internet-explorer/products/ie/home");
+</script>
+<![endif]--> 
+<head>
+	<title>Chopi</title>
+	<meta charset="UTF-8" />
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/navbar.css" rel="stylesheet">
+	<link href="css/product.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body class="body-design">
+	<div id="header"></div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ol class="breadcrumb breadcrumb-style">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="cart.html">Carrito</a></li>
+					<li class="active">Confirmación de compra</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="navbar product-container sec-color long" id="confirmPurchasePanel">
+			<div class="row">
+				<div class="col-md-12 align-center"><h2 id="title">Confirmación de compra</h2></div>
+			</div>
+			<div class="row">
+				<table class="col-md-offset-3" id="payTable2">
+				<tr>
+					<td>Id</td>
+					<td id="orderId"></td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td id="totalpricefinal">$ </td>
+				</tr>
+			</table>
+			</div>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-3">
+					<table>
+						<tr>
+							<td>
+								<div class="form-group">
+									<label class="control-label">Seleccionar direccion registrada</label>
+									<select class="form-control form-box" id="selectAddress">
+										<option id="selectDefault">Seleccionar dirección</option>
+									</select>
+								</div>
+							</td>
+							<td>
+								<button class="btn btn-primary btnpad" id="addAdressBtn"><span class="glyphicon glyphicon-plus"></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="form-group">
+									<label for="inputAddress" class="control-label">Seleccionar tarjeta registrada</label>
+									<select class="form-control form-box" id="selectCreditCard">
+										<option id="selectDefault">Seleccionar Tarjeta</option>
+									</select>
+								</div>
+							</td>
+							<td>
+								<button class="btn btn-primary btnpad" id="addCreditCardBtn"><span class="glyphicon glyphicon-plus"></span></button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-3">
+					<button class="btn btn-primary align-center downbtn" id="confirmPurchaseBtn">Confirmar compra</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="navbar product-container sec-color long" id="addNewAddressPanel">
+			<div class="row">
+				<div class="col-md-12 align-center"><h2 id="title">Agregar dirección nueva</h2></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6"><div class="alert alert-info" role="alert" id="newAddressAlert"></div></div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-3">
+					<form class="form validated-form" role="form" id="newAddressForm">
+						<div class="col-md-3">
+							<div class="form-group form-box">
+								<input type="text" class="form-control" placeholder="Lugar (Casa, etc)*" id="af1">
+							</div>
+							<div class="form-group form-box">
+								<input type="text" class="form-control" placeholder="Calle*" id="af2">
+							</div>
+							<div class="form-group form-box">
+								<input type="text" class="form-control" placeholder="Numero*" id="af3">
+							</div>
+							<div class="form-group form-box">
+								<input type="text" class="form-control" placeholder="Piso" id="af4">
+							</div>
+						</div>
+						<div class="col-md-offset-5">
+							<div class="form-group form-box">
+								<input type="text" class="form-control" placeholder="Ciudad" id="af6">
+							</div>
+							<div class="form-group">
+								<select class="form-control form-box" id="af7">
+									<option id="selectDefault1">Seleccione su provincia*</option>
+								</select>
+							</div>
+							<div class="form-group form-box">
+								<input type="text" class="form-control" placeholder="Codigo Postal*" id="af8">
+							</div>
+							<div class="form-group form-box">
+								<input type="text" class="form-control" placeholder="Telefono*" id="af9">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-5">
+					<button class="btn btn-danger btnpad" id="cancelAddressBtn"><span class="glyphicon glyphicon-remove"></span></button>
+					<button class="btn btn-primary btnpad" id="addNewAddressBtn" data-loading-text="Verificando...">Agregar</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="navbar product-container sec-color long" id="addNewCreditCardPanel">
+			<div class="row">
+				<div class="col-md-12 align-center"><h2 id="title">Agregar tarjeta nueva</h2></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6"><div class="alert alert-info" role="alert" id="newCardAlert"></div></div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-3">
+					<form class="form validated-form" role="form" id="newCreditCardForm">
+						<div class="col-md-3">
+							<div class="form-group">
+								<select class="form-control form-box" id="cardTypeSelect">
+									<option id="selectDefault2">Seleccione...</option>
+									<option value="A" name="genero">American Express</option>
+									<option value="M" name="genero">Mastercard</option>
+									<option value="D" name="genero">Diners</option>
+									<option value="V" name="genero">Visa</option>
+								</select>
+							</div>
+							<div class="form-group form-box">
+								<input type="text" class="form-control" placeholder="Numero de Tarjeta*" id="cardNumber">
+							</div>
+							<div class="form-group form-box">
+								<input type="text" class="form-control" placeholder="Codigo de seguridad*" id="cardCode">
+							</div>
+						</div>
+						<div class="col-md-offset-5">
+							<label class="control-label">Caduca:</label>
+							<ul class="nav nav-bar">
+								<li>
+									<div class="form-group">	
+										<select class="form-control form-box2" id="cardMonth">
+											<option id="selectDefault3">Mes</option>
+											<option value="01">01</option>
+											<option value="02">02</option>
+											<option value="03">03</option>
+											<option value="04">04</option>
+											<option value="05">05</option>
+											<option value="06">06</option>
+											<option value="07">07</option>
+											<option value="08">08</option>
+											<option value="09">09</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="form-group">	
+										<select class="form-control form-box2" id="cardYear">
+											<option id="selectDefault4">Año</option>
+											<option value="14">2014</option>
+											<option value="15">2015</option>
+											<option value="16">2016</option>
+											<option value="17">2017</option>
+											<option value="18">2018</option>
+											<option value="19">2019</option>
+											<option value="20">2020</option>
+											<option value="21">2021</option>
+										</select>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-5">
+					<button class="btn btn-danger btnpad" id="cancelCreditCardBtn"><span class="glyphicon glyphicon-remove"></span></button>
+					<button class="btn btn-primary btnpad" id="addNewCreditCardBtn" data-loading-text="Verificando...">Agregar</button>
+				</div>
+			</div>
+		</div>
+		<div class="navbar product-container sec-color long" id="OrderPaidPanel">
+		<div>
+			<h2 class="textcenter">Su compra ha sido confirmada.</h2>
+			<h4 class="textcenter">Dirigase a su perfil para verificar el estado de la misma.</h4>
+		</div>
+	</div>
+	</div>
+
+	<div id="footer"></div>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/pay.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/search.js"></script>
+	
+
+</body>
+</html>

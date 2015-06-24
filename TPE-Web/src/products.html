@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE 8]>
+<script type="text/javascript">
+location.replace("http://windows.microsoft.com/en-US/internet-explorer/products/ie/home");
+</script>
+<![endif]--> 
+
+<html>
+<head>
+	<title>Chopi</title>
+	<meta charset="UTF-8" />
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/navbar.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body class="body-design">
+	<div id="header"></div>
+
+
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ol class="breadcrumb breadcrumb-style" id="breadcrumb">
+					<!-- <li><a href="index.html">Inicio</a></li>
+					<li><a href="products.html">Hombres</a></li>
+					<li class="active">Camisas</li> -->
+				</ol>
+			</div>
+			<div class="row" id="search-results">
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-2">
+
+					<nav class="navbar filter-container" role="navigation">
+						<div class="col-md-2">
+
+							<h4>Filtros:</h4>
+							<ul class="nav navbar-nav">
+								<div class="form-group" id="filter-category">
+
+
+								</div>
+								<div class="form-group" id="filter-subcategory">
+
+
+								</div>
+
+								<li>
+									<div class="form-group" id="filter-marca">
+
+
+									</div>
+								</li>
+
+								<li>
+									<div class="form-group" id="filter-color">
+
+									</div>
+								</li>
+
+								<li>
+									<!--<div class="form-group" id="filter-talle">-->
+									<!--<label for="inputAddress" class="control-label">Talle</label>
+									<select class="form-control form-box4" data-validate="required,verifySelect">
+										<option id="selectDefault">Talle</option>
+										<option>XS</option>
+										<option>S</option>
+										<option>M</option>
+										<option>L</option>
+										<option>XL</option>
+									</select>-->
+									<!--</div>-->
+								</li>
+
+						<!--	<li>
+								<div class="form-group">
+									<label for="inputAddress" class="control-label">Precio</label>
+									<select class="form-control form-box4" data-validate="required,verifySelect">
+										<option id="selectDefault">Precio</option>
+										<option>Hasta $200</option>
+										<option>Entre $201 y $400</option>
+										<option>Entre $401 y $600</option>
+										<option>Entre $601 y $800</option>
+										<option>Entre $801 y $1000</option>
+										<option>Mas de $1000</option>
+									</select>
+								</div>
+							</li>-->
+
+							<li>
+								<div class="form-group" id="filter-ocasion">
+
+
+								</div>
+							</li>
+
+							<li>
+								<button type="button" class="btn btn-primary" onclick="filter();">Filtrar</button>
+							</li>
+							
+						</ul>
+					</div>
+
+
+				</nav>
+			</div>
+
+
+
+
+			<div class="col-md-10">
+				<div class="navbar product-container sec-color">
+
+					
+					<div class="row container-margins">
+
+						<div class="row">
+
+							<div class="col-md-2 col-md-offset-8">
+								<select class="form-control form-box" data-validate="required,verifySelect">
+									<option id="selectDefault">Ordenar productos por...</option>
+									<option name="OrderBy" value="PorNombre">Nombre</option>
+									<option name="OrderBy" value="PorMarca">Marca</option>
+									<option name="OrderBy" value="Asc">Precio de menor a mayor</option>
+									<option name="OrderBy" value="Desc">Precio de mayor a menor</option>
+								</select> 
+								
+								
+							</div>
+							<button type="button" class="btn btn-primary" onclick="ordenar();">Ordenar</button>
+
+
+						</div>
+
+						<div id="all-products"></div>
+
+
+						<div id="pagination1"></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer"></div>
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+
+<script src="js/navbar.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/products.js"></script>
+<script src="js/search.js"></script>
+
+
+</body>
+</html>

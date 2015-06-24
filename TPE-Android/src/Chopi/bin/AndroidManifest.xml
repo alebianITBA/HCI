@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.itba.hci.chopi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="edu.itba.hci.chopi.api.CategoriesService"
+            android:exported="false" />
+        <activity
+            android:name="edu.itba.hci.chopi.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.itba.hci.chopi.activity.LogInActivity"
+            android:label="@string/title_activity_log_in" >
+        </activity>
+        <activity 
+            android:name="edu.itba.hci.chopi.activity.ProductsActivity"
+            android:label="@string/title_activity_products" >
+        </activity>
+        <activity
+            android:name="edu.itba.hci.chopi.activity.MyOrdersActivity"
+            android:label="@string/title_activity_my_orders" >
+        </activity>
+        <activity
+            android:name="edu.itba.hci.chopi.activity.BaseActivity" >
+        </activity>
+        <activity android:name=".FullImageActivity"></activity>
+    </application>
+
+</manifest>

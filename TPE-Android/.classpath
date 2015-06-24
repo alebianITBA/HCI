@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/Chopi/gen"/>
+	<classpathentry kind="src" path="src/Chopi/src"/>
+	<classpathentry kind="lib" path="src/Chopi/bin/dexedLibs/android-support-v4-3078e1af21d221c327bc12ba74fd7260.jar"/>
+	<classpathentry kind="lib" path="src/Chopi/bin/dexedLibs/android-support-v4-95cfc747c82e1da89e3e252284f5ffe0.jar"/>
+	<classpathentry kind="lib" path="src/Chopi/bin/dexedLibs/android-support-v4-f89d04ba175267822e1abeef53166116.jar"/>
+	<classpathentry kind="lib" path="src/Chopi/bin/dexedLibs/annotations-b4891993f2cce066656152c53592d0a2.jar"/>
+	<classpathentry kind="lib" path="src/Chopi/bin/dexedLibs/annotations-d7cd2e8091f233f55d5f204ada67ec85.jar"/>
+	<classpathentry kind="lib" path="src/Chopi/libs/android-support-v4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="src/Chopi/bin/classes"/>
+</classpath>

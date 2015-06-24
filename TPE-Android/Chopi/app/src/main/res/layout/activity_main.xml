@@ -1,0 +1,106 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- The main content view -->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@null"
+        tools:context="edu.itba.hci.chopi.activity.MainActivity" >
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/welcome"
+            android:layout_below="@+id/welcome"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/search_title"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="38dp"
+            android:text="@string/welcome" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:onClick="searchButtonMainActivity"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:id="@+id/search_button"
+            android:layout_alignBottom="@+id/search"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/search"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageButton
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageButton7"
+                android:src="@drawable/indexhombres"
+                android:onClick="startHombreProductsActivity"
+                android:layout_gravity="left|top"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageButton9"
+                android:src="@drawable/indexbebes"
+                android:onClick="startBebeProductsActivity"
+                android:layout_gravity="right|top"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageButton10"
+                android:src="@drawable/indexnino"
+                android:onClick="startInfantilProductsActivity"
+                android:layout_gravity="right|bottom"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageButton8"
+                android:src="@drawable/indexmujer2"
+                android:onClick="startMujerProductsActivity"
+                android:layout_gravity="left|bottom"
+                android:background="@null"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+    <!-- The navigation drawer -->
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#111"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+</android.support.v4.widget.DrawerLayout>
